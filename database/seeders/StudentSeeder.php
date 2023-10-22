@@ -14,31 +14,11 @@ class StudentSeeder extends Seeder
     public function run(): void
     {
         DB::table('students')->insert([
-          'name' => 'Akua Mansah',
-          'email' => 'akuamansah@yahoo.com',
+          'name' => 'name',
+          'email' => 'name@yahoo.com',
           'department' => 'Food and Agriculture',
           'course' => 'Agricultural extension'
         ]);
 
-        DB::table('students')->insert([
-            'name' => 'Agya Koo',
-            'email' => 'agyakoo@gmail.com',
-            'department' => 'Agricultural Engineering',
-            'course' => 'Extension Officer '
-          ]);
-
-          DB::table('students')->insert([
-            'name' => 'Boanuaa Francisca',
-            'email' => 'francisca@mail.com',
-            'department' => 'Teacher Education',
-            'course' => 'Basic School Education'
-          ]);
-
-          DB::table('students')->insert([
-            'name' => 'Kwaku Agyemang Manu',
-            'email' => 'agyemang@gmail.com',
-            'department' => 'Business Managemnt',
-            'course' => 'High School Economics'
-          ]);
     }
 }
